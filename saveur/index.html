@@ -1,135 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saveur – Bsissa</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fafafa;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 480px;
-      margin: auto;
-      background: #fff;
-      min-height: 100vh;
-    }
-
-    .hero {
-      padding: 24px;
-      text-align: center;
-      background: linear-gradient(135deg, #41b06e, #2e8b57);
-      color: #fff;
-    }
-
-    .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: #fff;
-      margin: 0 auto 12px;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
-      align-items: center;
       justify-content: center;
-      font-weight: bold;
-      color: #41b06e;
-      font-size: 24px;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(135deg, #2E241B, #3A2F23);
+      color: #E8DFC8;
     }
 
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 24px;
+    .brand {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .tagline {
-      font-size: 14px;
-      opacity: 0.9;
-    }
-
-    .section {
-      padding: 20px;
-    }
-
-    .section h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .buttons a {
-      display: block;
-      margin-bottom: 12px;
+    .logos img {
+      width: 260px;
+      height: 210px;
+      object-fit: contain;
+      border-radius: 14px;
+      border: 2px solid #556B2F;
+      background: #3A2F23;
       padding: 14px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      color: #fff;
+      box-shadow: 0 6px 20px rgba(85, 107, 47, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .btn-whatsapp { background: #25d366; }
-    .btn-call { background: #41b06e; }
-    .btn-map { background: #555; }
+    .logos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(85, 107, 47, 0.7);
+    }
 
-    footer {
-      text-align: center;
-      padding: 16px;
-      font-size: 13px;
-      color: #888;
-      border-top: 1px solid #eee;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+    }
+
+    .social-links a {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #3A2F23;
+      border: 2px solid #7A5C3E;
+      box-shadow: 0 4px 14px rgba(122, 92, 62, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #556B2F;
+      transform: scale(1.1);
+      box-shadow: 0 8px 26px rgba(85, 107, 47, 0.7);
+    }
+
+    .social-links img {
+      width: 38px;
+      height: 38px;
+      filter: invert(92%) sepia(30%) saturate(150%) brightness(1);
+      transition: filter 0.3s;
+    }
+
+    .social-links a:hover img {
+      filter: invert(0%) brightness(0);
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-      <div class="logo">S</div>
-      <h1>Saveur</h1>
-      <div class="tagline">Bsissa tunisienne authentique</div>
+  <div class="brand">
+    <div class="logos">
+      <img src="logo s-Photoroom.png" alt="Saveur Bsissa Logo">
     </div>
+  </div>
 
-    <!-- À PROPOS -->
-    <div class="section">
-      <h2>À propos de Saveur</h2>
-      <p>
-        Saveur propose une <strong>Bsissa tunisienne traditionnelle</strong>,
-        préparée à partir de céréales soigneusement sélectionnées et
-        d’ingrédients naturels.  
-        Un produit sain, nutritif et inspiré de notre héritage.
-      </p>
-    </div>
-
-    <!-- BOUTONS D’ACTION -->
-    <div class="section buttons">
-      <a href="tel:+216XXXXXXXX" class="btn-call">📞 Appeler</a>
-      <a href="https://wa.me/216XXXXXXXX" class="btn-whatsapp">💬 WhatsApp</a>
-      <a href="https://maps.google.com/?q=Saveur+Bsissa" class="btn-map">📍 Localisation</a>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      Propulsé par DigiBoost QR
-    </footer>
-
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/17L8Z2Kak3/" target="_blank">
+      <img src="facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/saveu_rr" target="_blank">
+      <img src="instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@saveur240" target="_blank">
+      <img src="tiktok.svg" alt="Tiktok">
+    </a>
+    <a href="https://wa.me/21657131890" target="_blank">
+      <img src="Whatsapp.svg" alt="Whatsapp">
+    </a>
+    <a href="mailto:saveur028@gmail.com">
+      <img src="email.svg" alt="Email">
+    </a>
   </div>
 
   <script>
-    // Placeholder pour statistiques de scan
-    console.log("Page QR Saveur consultée");
+    document.addEventListener("DOMContentLoaded", () => {
+      const brand = document.querySelector(".brand");
+      const socials = document.querySelector(".social-links");
+
+      brand.style.opacity = 0;
+      socials.style.opacity = 0;
+
+      setTimeout(() => {
+        brand.style.transition = "opacity 1.5s ease";
+        socials.style.transition = "opacity 1.5s ease 0.5s";
+        brand.style.opacity = 1;
+        socials.style.opacity = 1;
+      }, 200);
+    });
   </script>
+
 </body>
 </html>
-
